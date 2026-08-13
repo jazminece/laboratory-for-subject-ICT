@@ -1,0 +1,24 @@
+Assessment Overview
+This activity involved constructing a simple Local Area Network (LAN) and configuring network devices within Cisco Packet Tracer. The focus was on laying out topology, selecting the correct physical media, assigning IPv4 addresses, and verifying both network-level connectivity and application-layer client-server communication.
+
+Parts Completed
+Part 1: Construct the LAN Topology
+Assembled a basic Local Area Network by placing 1 central Switch, 3 Host PCs (PC0, PC1, PC2), and 1 Server (Server0) onto the workspace.
+
+Part 2: Specify Cables and Physical Media
+Connected all end devices to the switch using Ethernet Straight-Through cables (solid black lines). Straight-through cables are required because they link different types of network devices operating at different OSI layers (end devices like PCs/Servers to an intermediate device like a Switch).
+
+Part 3: Configure Device IP Addresses
+Assigned static IPv4 addresses and subnet masks within the 192.168.1.0/24 subnet to establish local addressing
+Part 4: Verify Network Connectivity (Ping Test)
+Tested basic Layer 3 communication using the ping command from PC0 to Server0 (ping 192.168.1.1). Received 4 successful ICMP replies with 0% packet loss, confirming proper media connections and IP configurations.
+
+Part 5: Verify Client-Server Interaction
+Demonstrated Layer 7 application interaction by opening the Web Browser on PC0 and navigating directly to [http://192.168.1.1](http://192.168.1.1). The successful retrieval and display of the HTTP default web page hosted on Server0 provided concrete proof of functional client-server communication.
+
+Key Learnings
+Media Selection: Understanding that Straight-Through Ethernet cables are used for host-to-switch connections, whereas Console cables are strictly reserved for out-of-band management.
+
+IP Addressing: Recognizing how devices within the same local network subnet (192.168.1.0/24) send and receive packets using unique IP addresses.
+
+Network vs. Application Testing: Learning that a ping test only verifies network transport connectivity, whereas requesting web pages over HTTP demonstrates true end-to-end client-server service interaction.
